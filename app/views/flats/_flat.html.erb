@@ -1,0 +1,30 @@
+<div id="<%= dom_id flat %>" class="card" style="width: 100%">
+
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200" alt="">
+
+  <div class="card-body">
+
+    <h2 class="card-title"><%= flat.name %></h2>
+
+    <p class="card-text">
+      <%= flat.address %>
+    </p>
+
+    <div class="d-flex justify-content-start gap-3">
+        <p>
+          <strong><i class="fa-solid fa-user-group"></i></strong>
+          <%= flat.number_of_guests %>
+        </p>
+
+        <p>
+          <strong><i class="fa-solid fa-euro-sign"></i></strong>
+          <%= flat.price_per_night %>
+        </p>
+
+    </div>
+  </div>
+
+  <div class="card-infoplus">
+  </div>
+
+</div>
